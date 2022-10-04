@@ -18,7 +18,7 @@ for (i = 0; i < nodeList.length; i++) {
     nodeList[i].appendChild(listitem);
     // for every iteration of myNodelist, append the span
         // so add to the list
-    console.log(nodeList);
+    // console.log(nodeList);
 }
 
 // Click on a close button to hide the current list item
