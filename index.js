@@ -37,11 +37,11 @@ for (i = 0; i < close.length; i++) {
 }
 
 // Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('#todoUL');
+var list = document.querySelector('ul');
 // queries the whole list by the list id
 list.addEventListener('click', function(ev) {
     // add eventlistener to the above query select
-    if (ev.target.tagName == 'li') {
+    if (ev.target.tagName === 'li') {
         // if event target's tagname is 'li'
         ev.target.classList.toggle('checked');
         // turn off the class name 'checked'
@@ -49,12 +49,14 @@ list.addEventListener('click', function(ev) {
 }, false);
 // return false
 
+console.log("Look at this");
+
 
 // Create a new list item when clicking on the "Add" button
 function newElement() {
     var li = document.createElement("li");
     // create a new <li> element 
-    var inputValue = document.getElementById("input");
+    var inputValue = document.getElementById("myinput").value;
     // get the input from the input field
     var t = document.createTextNode(inputValue);
     // create a text node with the input value
@@ -70,5 +72,26 @@ function newElement() {
     document.getElementById("input").value = "";
     // put the value entered inside the input
 
-    
+    var span = document.createElement("span");
+    // create a new span
+    var txt = document.createTextNode("\u00D7");
+    // create the x next to it
+    span.className = "close";
+    // change the class name of the new span to close
+    span.appendChild(txt);
+    // append the x to the span
+    li.appendChild(span);
+    // append the new span to the list
+    console.log("Add Button pressed");
+
+    for (i = 0; i < close.length; i++) {
+        // iterate through the close spans
+        close[i].onclick = function() {
+            // set onclick to those iterations
+            var div = this.parentElement;
+            // make this parent element
+            div.style.display = "none";
+            // no display on this parent element
+        }
+    }
 }

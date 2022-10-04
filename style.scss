@@ -52,6 +52,8 @@ $background: #F3F9FF;
             background: #eee;
             font-size: 18px;
             transition: .2s;
+
+            user-select: none;
         }
         li:nth-child(odd) {
             background: #f9f9f9;
@@ -65,20 +67,24 @@ $background: #F3F9FF;
         color: white;
         text-decoration: line-through;
     }
-    // ul li.checked::before {
-    //     content: '';
-    //     position: absolute;
-    //     border-color: #fff;
-    //     border-style: solid;
-    //     border-width: 0 2px 2px 0;
-    //     top: 10px;
-    //     left: 16px;
-    //     transform: rotate(45deg);
-    //     height: 15px;
-    //     width: 7px;
-    // }
+    ul li.checked::before {
+        content: '';
+        position: absolute;
+        border-color: #fff;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        top: 10px;
+        left: 16px;
+        transform: rotate(45deg);
+        height: 15px;
+        width: 7px;
+    }
     .close {
-        background-color: red;
+        color: #243F67;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 12px 16px 12px 16px;
     }
     .close:hover {
         background-color: #243F67;
