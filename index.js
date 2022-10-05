@@ -1,7 +1,7 @@
 // Create a "close" button and append it to each list item
-var nodeList = document.getElementsByClassName("listitem");
+var nodeList = document.getElementsByTagName("li");
 // create node list
-// console.log(nodeList);
+console.log(nodeList);
 var i;
 for (i = 0; i < nodeList.length; i++) {
     // iterate through nodelist
