@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+* body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+* body .header {
+  background-color: #243F67;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+* body table {
+  background-color: #F3F9FF;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #243F67;
+  padding: 20px;
+}
+* body table tr td {
+  border: #243F67 1px solid;
+  font-size: large;
+}/*# sourceMappingURL=table.css.map */
