@@ -74,6 +74,12 @@ window.addEventListener('load', () => {
         // set the inner text 
         task_delete_el.innerText = "Delete";
 
+        // Add the image
+        // const image = document.createElement('img');
+        // image.src = '/img/delete.png';
+        // document.querySelector('.delete').appendChild(image);
+
+
         // APPENDS OF THE ACTIONS
         task_actions_el.appendChild(task_edit_el);
         task_actions_el.appendChild(task_delete_el);

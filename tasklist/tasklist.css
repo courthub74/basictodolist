@@ -161,3 +161,7 @@ main {
 	color: rgb(182, 46, 73);
     color: #30ADFF;
 }
+
+.task .actions .delete img {
+    background-color: white;
+}
