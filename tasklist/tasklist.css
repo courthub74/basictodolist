@@ -1,11 +1,6 @@
 
 :root {
-	--dark: #374151;
-	--darker: #1F2937;
-	--darkest: #111827;
 	--grey: #6B7280;
-	--pink: #EC4899;
-	--purple: #8B5CF6;
 	--light: #EEE;
 }
 
@@ -126,7 +121,11 @@ main {
 }
 
 .task .content .text:not(:read-only) {
-	color: #243F67;
+    color: white;
+    color: pink;
+    color: #2ebe89;
+    color: #3292FA;
+   
 }
 
 .task .actions {
@@ -153,10 +152,12 @@ main {
 
 .task .actions .edit {
     background-color: white;
+    color: white;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .task .actions .delete {
-	color: rgb(165, 29, 56);
+	color: rgb(182, 46, 73);
+    color: #30ADFF;
 }
