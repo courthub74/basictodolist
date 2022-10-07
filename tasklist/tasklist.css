@@ -38,7 +38,7 @@ header h1{
 }
 
 #new-task-form {
-	display: flex;;
+	display: flex;
 }
 
 input, button {
@@ -50,11 +50,11 @@ input, button {
 
 #new-task-input {
 	flex: 1 1 0%;
-	background-color: var(--darker);
+	background-color: #243F67;
+    color: white;
 	padding: 1rem;
-	border-radius: 1rem;
+	/* border-radius: 1rem; */
 	margin-right: 1rem;
-	color: var(--light);
 	font-size: 1.25rem;
 }
 
@@ -62,14 +62,18 @@ input, button {
 	color: var(--grey);
 }
 
+#new-task-input:active {
+    color: white;
+    background-color: #243F67;
+}
+
 #new-task-submit {
-	color: var(--pink);
 	font-size: 1.25rem;
 	font-weight: 700;
-	/* background-image: linear-gradient(to right, var(--pink), var(--purple)); */
-    background-color: blue;
+    border: 2px solid #243F67;
+    /* border-radius: 1rem; */
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: #243F67;
 	cursor: pointer;
 	transition: 0.4s;
 }
@@ -103,9 +107,9 @@ main {
 #tasks .task {
 	display: flex;
 	justify-content: space-between;
-	background-color: var(--darkest);
+	background-color: #243F67;
 	padding: 1rem;
-	border-radius: 1rem;
+	/* border-radius: 1rem; */
 	margin-bottom: 1rem;
 }
 
@@ -122,7 +126,7 @@ main {
 }
 
 .task .content .text:not(:read-only) {
-	color: gainsboro;
+	color: #243F67;
 }
 
 .task .actions {
@@ -134,7 +138,7 @@ main {
 	cursor: pointer;
 	margin: 0 0.5rem;
 	font-size: 1.125rem;
-	font-weight: 700;
+	font-weight: 400;
 	text-transform: uppercase;
 	transition: 0.4s;
 }
@@ -148,12 +152,11 @@ main {
 }
 
 .task .actions .edit {
-	/* background-image: linear-gradient(to right, var(--pink), var(--purple)); */
-    background-color: blue;
+    background-color: white;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .task .actions .delete {
-	color: crimson;
+	color: rgb(165, 29, 56);
 }
