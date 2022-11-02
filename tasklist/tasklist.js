@@ -39,7 +39,7 @@ window.addEventListener('load', () => {
         task_el.appendChild(task_content_el);
 
         // Create the task input element
-        const task_input_el = document.createElement('input');
+        const task_input_el = document.createElement('input');  
         // set it's class
         task_input_el.classList.add('text');
         // set it's type
